@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Andrés Martínez Portafolio</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
             <a href="../index.html">INICIO</a>
             <a href="./sobre_mi.html">SOBRE MÍ</a>
             <a href="./portafolio.html">PORTAFOLIO</a>
-            <a href="./blog.html">BLOG </a>
-            <a href="#">CONTACTO</a>
+            <a  href="./blog.html">BLOG </a>
+            <a class="active" href="#">CONTACTO</a>
         </nav>
         <div id="lg">
             <p>ES</p>
@@ -26,8 +26,8 @@
         </div>
     </header>
 
-    <main id="contacto">
-        <h1>ESTEMOS EN CONTACTO</h1>
+    <main class="contacto">
+        <h1>ESTEMOS EN<br> CONTACTO</h1>
         <h2>ME INTERESA...</h2>
         <ul>
             <li>Diseño UX/UI</li>
@@ -39,28 +39,20 @@
             <li>Marketing</li>
             <li>Otro</li>
         </ul>
-        <section>
             <form action="">
-                <div>
-                    <label for="nombre-usuario">Tu Nombre</label>
-                    <input type="text" id="nombre-usuario">
-                </div>
+                <fieldset>
+                    <input type="text" id="name" placeholder="Tu Nombre">
+                    
 
-                <div>
-                    <label for="correo-usuario">Tu Correo</label>
-                    <input type="email" id="correo-usuario">
-                </div>
+                    <input type="email" id="mail" placeholder="Correo">
+                    
+                </fieldset>
+                <fieldset>
 
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="" id="mensaje" cols="" rows="10"></textarea>
-                </div>
-
-                <div>
-                    <button type="submit">ENVIAR MENSAJE →</button>
-                </div>
+                    <textarea name="" id="mensaje" cols="" rows="10" placeholder="Mensaje" ></textarea>
+                </fieldset>
+                    <input type="submit" value="ENVIAR MENSAJE →">
             </form>
-        </section>
     </main>
     </div>
     <footer>
