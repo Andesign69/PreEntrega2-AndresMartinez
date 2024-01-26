@@ -1,0 +1,172 @@
+/* _main.scss */
+
+main {
+  width: 100%;
+}
+
+main h1 {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 150px;
+  margin: 80px 0;
+}
+
+.services {
+  display: flex;
+  gap: 16px;
+  border: solid 3px #000;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+div#lg {
+  display: flex;
+  width: 10%;
+  justify-content: end;
+  border-left: solid 1px #000;
+  font-size: 24px;
+}
+
+main dl {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+}
+
+dd {
+  margin-right: 16px;
+}
+
+main dd:nth-child(6) {
+  width: 100%;
+  text-align: end;
+  margin: 0;
+}
+
+dl .button {
+  padding: 16.5px 28px;
+  background: #000;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  main h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  main dl {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  div#lg {
+    display: flex;
+    font-size: 24px;
+  }
+
+  dd {
+    margin-right: 16px;
+  }
+
+  main dd:nth-child(6) {
+    width: 100%;
+    margin: 30% 0 0 0;
+    text-align: center;
+  }
+
+  dl button {
+    width: 100%;
+  }
+
+  .services {
+    gap: 8px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  main h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .services {
+    gap: 8px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main dl {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  div#lg {
+    display: flex;
+    font-size: 24px;
+  }
+
+  dd {
+    margin-right: 16px;
+  }
+
+  main dd:nth-child(6) {
+    width: 100%;
+    margin: 30% 0 0 0;
+    text-align: center;
+  }
+
+  dl button {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  main h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sobre_mi h2 {
+    font-size: 30px;
+    width: 20%;
+  }
+
+  .sobre_mi p {
+    width: 80%;
+  }
+
+  dl button {
+    width: 100%;
+  }
+}

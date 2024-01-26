@@ -1,0 +1,122 @@
+// _contacto.scss
+@import 'variables';
+
+.contacto {
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 3vw;
+    margin-top: 5vh;
+    justify-content: center;
+
+    li {
+      border: solid 2px $primary-color;
+      border-radius: $border-radius-li;
+      padding: $padding-li;
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  form {
+    margin: 5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      &:nth-child(1) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 5vh 0;
+      }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 45%;
+      border-width: 0;
+      border-bottom: solid 3px $primary-color;
+      font-size: $font-size-input-footer;
+      color: $primary-color;
+      outline: none;
+
+      &::placeholder {
+        color: $secondary-color;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border: solid 3px $primary-color;
+      padding: 20px;
+      font-size: $font-size-input-footer;
+    }
+
+    input[type="submit"] {
+      margin: 20px 0;
+      padding: $padding-button;
+      background: $background-button;
+      color: $color-button;
+      border-radius: $border-radius-button;
+      align-self: end;
+      margin-top: 30px;
+      border: none;
+      font-size: $font-size-submit-footer;
+    }
+  }
+  @media screen and (max-width: $breakpoint-small) {
+    h1 {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    ul {
+      justify-content: center;
+    }
+
+    form {
+      fieldset {
+        &:nth-child(1) {
+          margin: 5vh 0;
+        }
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+
+      textarea {
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  }
+
+  @media all and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    // Estilos adicionales para este rango de pantalla, si es necesario
+  }
+
+  @media all and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    // Estilos adicionales para este rango de pantalla, si es necesario
+  }
+}

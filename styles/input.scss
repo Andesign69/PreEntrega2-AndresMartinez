@@ -271,10 +271,11 @@
         font-size: 100px;
       }
     }
-  
+    .portafolio article:nth-child(1) a{
+      background-image: url('../img/portafolio/tick_mint.jpg');
+      }
     a {
       width: 35%;
-      background-image: url(../img/sobre_mi/habilidades.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;

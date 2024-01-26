@@ -1,0 +1,121 @@
+// _header.scss
+@import 'variables';
+
+header {
+  display: flex;
+  border: solid $border-width $primary-color;
+  padding: $padding-header;
+  align-items: center;
+  width: 100%;
+  margin-top: $margin-header-top;
+
+  nav {
+    display: flex;
+    width: $nav-width;
+    gap: $nav-gap;
+  }
+  #lg {
+    display: flex;
+    width: 10%;
+    justify-content: end;
+    border-left: solid 1px #000;
+    font-size: 24px;
+  }
+  a {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-color;
+    display: flex;
+
+    &.active::before {
+      content: "";
+      position: relative;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      top: 6vh;
+      left: 50%;
+      display: flex;
+    }
+
+    
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    width: 60%;
+    justify-content: center;
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 3vw;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    .active {
+      font-size: 24px;
+
+      &::before {
+        visibility: hidden;
+      }
+    }
+
+    #lg {
+      display: none !important;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    width: 60%;
+    justify-content: center;
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 3vw;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    .active {
+      font-size: 24px;
+
+      &::before {
+        visibility: hidden;
+      }
+    }
+
+    #lg {
+      display: none !important;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    width: 90%;
+    justify-content: center;
+
+    nav {
+      align-items: center;
+      justify-content: center;
+      gap: 3vw;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    .active {
+      font-size: 24px;
+
+      &::before {
+        visibility: hidden;
+      }
+    }
+  }
+}

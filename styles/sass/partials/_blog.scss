@@ -1,0 +1,161 @@
+// _blog.scss
+@import 'variables';
+.blog {
+  padding: $padding-blog;
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: solid 3px;
+
+      time {
+        width: 15%;
+        font-size: 38px;
+        font-weight: bold;
+        padding-right: 50px;
+      }
+  
+      div {
+        width: 85%;
+  
+        h2{
+          font-size: 52px;
+        }
+      
+  
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        margin-top: 5vh;
+        width: 20vw;
+      }
+  
+      li {
+        border: solid 2px #000;
+        border-radius: 14px;
+        padding: 2px 12px;
+    
+        &:hover {
+          background: $background-li-hover;
+          color: $color-li-hover;
+          transform: scale($scale-li-hover);
+        }
+      }
+    }
+  }
+  }
+        
+
+@media screen and (max-width: $breakpoint-small) {
+  .blog article {
+    // flex-direction: column;
+    // align-items: center;
+    // color: red;
+
+    time {
+      width: 100%;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    div {
+      width: 85%;
+
+      h2{
+        font-size: 24px;
+      }
+    }
+
+    ul {
+      width: 80vw!important;
+    }
+
+    li {
+      width: $width-li-small;
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+  .blog article {
+    flex-direction: column;
+    align-items: center;
+
+    time {
+      width: 100%;
+      font-size: $font-size-time-small;
+      margin-bottom: $margin-bottom-time-small;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      width: $width-li-small;
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+  .blog article {
+    flex-direction: column;
+    align-items: center;
+
+    time {
+      width: 100%;
+      font-size: $font-size-time-medium;
+      margin-bottom: $margin-bottom-time-medium;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      width: $width-li-medium;
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-large) {
+  .blog article {
+    flex-direction: row;
+
+    time {
+      width: $width-time;
+      font-size: $font-size-time;
+      margin-bottom: 0;
+      margin-right: $margin-right-time-large;
+      padding: 0;
+    }
+
+    div {
+      width: 80%;
+
+      h2{
+        font-size: 48px;
+        text-align: left;
+      }
+    
+
+    ul {
+      justify-content: flex-start;
+    }
+
+    li {
+      width: $width-li-large;
+    }
+  }
+}
+}
